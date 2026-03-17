@@ -1,0 +1,61 @@
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+@import url('https://fonts.googleapis.com/css2?family=Inter:wght@300;400;500;600;700&family=Playfair+Display:wght@500;600;700&display=swap');
+
+@layer base {
+  :root {
+    --background: 0 0% 99%;
+    --foreground: 210 11% 15%;
+
+    --card: 0 0% 100%;
+    --card-foreground: 210 11% 15%;
+
+    --popover: 0 0% 100%;
+    --popover-foreground: 210 11% 15%;
+
+    --primary: 144 100% 30%;
+    --primary-foreground: 0 0% 100%;
+
+    --secondary: 144 10% 95%;
+    --secondary-foreground: 210 11% 15%;
+
+    --muted: 210 10% 96%;
+    --muted-foreground: 210 8% 46%;
+
+    --accent: 144 100% 30%;
+    --accent-foreground: 0 0% 100%;
+
+    --destructive: 0 84% 60%;
+    --destructive-foreground: 0 0% 100%;
+
+    --border: 210 14% 89%;
+    --input: 210 14% 89%;
+    --ring: 144 100% 30%;
+
+    --radius: 0.625rem;
+
+    --font-display: 'Playfair Display', Georgia, serif;
+    --font-body: 'Inter', system-ui, sans-serif;
+
+    --shadow-soft: 0 2px 15px -3px hsl(210 14% 60% / 0.15);
+    --shadow-card: 0 4px 25px -5px hsl(210 14% 60% / 0.12);
+    --shadow-elevated: 0 10px 40px -10px hsl(144 100% 30% / 0.15);
+  }
+}
+
+@layer base {
+  * {
+    @apply border-border;
+  }
+
+  body {
+    @apply bg-background text-foreground;
+    font-family: var(--font-body);
+  }
+
+  h1, h2, h3 {
+    font-family: var(--font-display);
+  }
+}
